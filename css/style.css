@@ -1,8 +1,26 @@
 body{
-  background-color: #eceff1;
+  background-image: #eceff1;
 }
 
-.red-hover:hover{
-  color: #e53935;
-  transition: 1s;;
+.green-hover:hover{
+  color: #4caf50;
+  transition: 1s;
+}
+.blue-hover:hover{
+  color: #2979ff;
+  transition: 1s;
+}
+
+.container {
+  width: 92%;
+}
+
+.rounded-image {
+  border-radius: 50%;
+  float: right;
+  width: 30%;
+}
+
+.activator:hover{
+  cursor: pointer;
 }
