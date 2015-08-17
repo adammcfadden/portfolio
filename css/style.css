@@ -1,0 +1,8 @@
+body{
+  background-color: #eceff1;
+}
+
+.red-hover:hover{
+  color: #e53935;
+  transition: 1s;;
+}
