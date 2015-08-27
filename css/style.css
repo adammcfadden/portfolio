@@ -12,6 +12,18 @@
   transition: 1s;
 }
 
+.red-hover:hover{
+  color: red;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.purple-hover:hover{
+  color: purple;
+  transition: 1s;
+  cursor: pointer;
+}
+
 .container {
   width: 92%;
 }
@@ -28,4 +40,11 @@
 
 .project-card {
   opacity: 0;
+}
+
+.nav-contact-info{
+  display: none;
+}
+.side-menu-font{
+  font-size: 11px;
 }

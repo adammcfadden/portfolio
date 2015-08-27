@@ -8,4 +8,11 @@ $(function(){
       }
     });
   });
+  $("#nav-phone-icon").click(function() {
+    $("#nav-phone-info").toggle("slow")
+  })
+  $("#nav-email-icon").click(function() {
+    $("#nav-email-info").toggle("slow")
+  })
+  $(".button-collapse").sideNav();
 });
