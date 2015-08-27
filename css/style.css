@@ -7,6 +7,11 @@
   transition: 1s;
 }
 
+.yellow-hover:hover{
+  color: yellow;
+  transition: 1s;
+}
+
 .container {
   width: 92%;
 }
