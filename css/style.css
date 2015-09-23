@@ -24,13 +24,21 @@
   cursor: pointer;
 }
 
+.light-blue-hover:hover{
+  color: lightblue;
+  transition: 1s;
+  cursor: pointer;
+}
+
 .container {
   width: 92%;
 }
 
 .rounded-image {
   border-radius: 50%;
-  float: right;
+}
+
+.sized-image{
   width: 22%;
 }
 
@@ -47,4 +55,8 @@
 }
 .side-menu-font{
   font-size: 12px;
+}
+
+.full-width{
+  width: 100%;
 }
