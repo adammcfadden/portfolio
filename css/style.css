@@ -73,3 +73,11 @@
 .full-width{
   width: 100%;
 }
+
+.card.double-height{
+  height: 622.5px;
+}
+
+.card.large .card-content-large {
+  height: 292.5px;
+}
