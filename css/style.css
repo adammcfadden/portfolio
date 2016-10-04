@@ -3,6 +3,16 @@
   transition: 1s;
 }
 
+.filler{
+  height: 100px;
+}
+
+.navbar-fixed {
+  top: 0;
+  position: absolute;
+}
+
+
 .white-text .green-hover:hover{
   color: #4caf50 !important;
 }
