@@ -14,7 +14,7 @@ $(function(){
           bottom_of_window = scrollTop + $(window).height();
 
       if( bottom_of_window > bottom_of_object - 200 ){
-          $(this).fadeTo("slow", 1)
+          $(this).fadeTo("slow", 2)
       }
     });
 
