@@ -8605,6 +8605,8 @@ body {
 
 .project-card {
   opacity: 0; }
+  .project-card .card-image img {
+    min-height: 165px; }
 
 .card.double-height, .double-height.custom-card, .double-height.project-card {
   height: 622.5px; }

@@ -127,6 +127,9 @@ body {
 .project-card {
   @extend .custom-card;
   opacity: 0;
+  .card-image img {
+    min-height: 165px;
+  }
 }
 
 .card.double-height{
