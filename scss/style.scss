@@ -1,13 +1,18 @@
 @import 'materialize';
 @import 'font-awesome';
 
-.green-hover:hover{
-  color: #4caf50;
-  transition: 1s;
-}
+// colors
+$light-blue: lightblue;
+$green: #4caf50;
+$indigo: #1a237e;
+$blue: #2979ff;
+$yellow: yellow;
+$red: red;
+$dark-grey: #212121;
 
-.filler{
-  height: 300px;
+// navbar
+.nav-contact-info{
+  display: none;
 }
 
 .navbar-fixed {
@@ -15,49 +20,60 @@
   position: absolute;
 }
 
+nav .fa {
+  font-size: 2em;
+}
+
+nav ul a:hover {
+  background-color: inherit;
+}
+
+.small-nav {
+  a {
+    padding: 0 7px;
+  }
+  .fa {
+    font-size: 1.2em;
+  }
+  .brand-logo {
+    font-size: 1.2em;
+  }
+}
+// header
+
+.intro{
+  height: 45vh;
+}
+
+.intro-box {
+  width: 100%;
+}
+
+.intro-title {
+
+}
+
+.intro-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline;
+      padding: 8px;
+    }
+}
+
+
+// fonts
+.side-menu-font{
+  font-size: 12px;
+}
+
 body {
-  @extend .grey, .lighten-4;
+  color: $dark-grey;
 }
 
-.white-text .green-hover:hover{
-  color: #4caf50 !important;
-}
-
-.blue-hover:hover{
-  color: #2979ff;
-  transition: 1s;
-}
-
-.yellow-hover:hover{
-  color: yellow;
-  transition: 1s;
-}
-
-.white-text .yellow-hover:hover{
-  color: yellow !important;
-}
-
-.red-hover:hover{
-  color: red;
-  transition: 1s;
-  cursor: pointer;
-}
-
-.indigo-hover:hover{
-  color: #1a237e;
-  transition: 1s;
-  cursor: pointer;
-}
-
-.white-text .indigo-hover:hover{
-  color: #1a237e !important;
-}
-
-.light-blue-hover:hover{
-  color: lightblue;
-  transition: 1s;
-  cursor: pointer;
-}
+// content
 
 .container {
   width: 92%;
@@ -71,23 +87,46 @@ body {
   width: 22%;
 }
 
+
+// Hover effects
 .activator:hover{
   cursor: pointer;
 }
 
+@mixin hover-transition($color) {
+  transition: 1s;
+  cursor: pointer;
+  color: $color;
+}
+
+.green-hover:hover { @include hover-transition($green); }
+.blue-hover:hover { @include hover-transition($blue); }
+.yellow-hover:hover { @include hover-transition($yellow); }
+.red-hover:hover { @include hover-transition($red); }
+.indigo-hover:hover { @include hover-transition($indigo); }
+.light-blue-hover:hover { @include hover-transition($light-blue); }
+
+
+// Custom card styling
+.card {
+  &.small, &.medium, &.large {
+    .card-image {
+      max-height: 55%;
+    }
+    .card-image + .card-content {
+      max-height: 45%;
+    }
+  }
+}
+
+.custom-card {
+  @extend .card;
+  overflow: hidden;
+}
+
 .project-card {
+  @extend .custom-card;
   opacity: 0;
-}
-
-.nav-contact-info{
-  display: none;
-}
-.side-menu-font{
-  font-size: 12px;
-}
-
-.full-width{
-  width: 100%;
 }
 
 .card.double-height{
