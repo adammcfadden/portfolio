@@ -11,7 +11,7 @@ $(function(){
       var bottom_of_object = $(this).offset().top + $(this).outerHeight(),
           bottom_of_window = scrollTop + $(window).height();
 
-      if( bottom_of_window > bottom_of_object - 200 ){
+      if( bottom_of_window > bottom_of_object - 250 ){
           $(this).fadeTo("fast", 1)
       }
     });
